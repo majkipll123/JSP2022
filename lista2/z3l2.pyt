@@ -1,0 +1,9 @@
+a=input()
+b=len(a)
+wyraz=list(a)
+h=len(wyraz)
+c=wyraz[0]
+d=wyraz[1]
+e=wyraz[h-2]
+f=wyraz[h-1]
+print(c+d+e+f)    

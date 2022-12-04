@@ -1,0 +1,30 @@
+definiowanie funkcji w python 
+zxaczynamy od 
+def
+pozniej 
+nazwa funcji 
+(argumenty)
+def nazwa_funkcji(argumenty):
+instrukcje 
+def funkcja_hello(): 
+print(hello world")
+funkcja_hello
+def fimlcka sqrt (m) 
+return m**0.5
+search4volwes(word)
+***helppomoc nazwaaaa1***
+***cpstamcostam2***
+costamcostam instrukcje
+help(search4volwes)
+tylko 1 linie pomocy
+volwes= set ('aeiou')
+                             kretka funkcja zbior itd do powtorki
+zbior= zawieranie a nie kolejnosc ?
+trzeba zaczac sie uczyc pythona po swojemu
+skracac wszystko jak sie da 
+patrzec czy litery ktore sa rzutowane na zbior 
+powtorka fukcji intersection
+rzutowanie sbioru na 2 zbior 
+
+jak sprawdzic czy jest tylko a a jak sprawdzic czy ma caly zbior elementowy bez 2 argumentiu z predefiniowanej wartosci 
+search4letters funcka do znalezienia i omowienia 

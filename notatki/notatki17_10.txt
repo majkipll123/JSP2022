@@ -1,0 +1,100 @@
+petle i warunki 
+porownanie lekskograficzne stringow, porownanie znakow a nie dlugosci 
+wielokrotne porownanie w tej samej linii 
+2==2>1.1>-1>-1000
+true 
+a=5 
+b=5 
+a==b 
+b=a wtedy b is a = true 
+jezeli 
+a=5.
+b=5. to a==b ale a in b = false 
+poniewaz id jest rozne.
+"in" in "indigo"
+true 
+"di" in "indigo"
+and=& 
+bool(0)
+bool(0.)
+bool()																																																																																																																																																																																																																																																																																																																																																														
+zawsze jest false jezeli nie jest pusty to znaczy ze bool () jest zawsze prawda 
+
+dzialanie komendy if 
+x,y=2,1
+if x>y:
+    x=1 
+    y=2 // mozna uzyc rowniez x,y=1,2) lub x,y=y,x tez zadziala//
+
+print(x,y) 
+1 2
+if warunek1:
+    isntrukja
+    instrukcja 
+elif:
+    instrukcja
+    instrukcja
+else    
+    isntrukja
+
+if  3>2 :
+print ("3 jest wieksze od 2:)
+if 3==2; 
+    print("3 jest rowne 2")
+else
+
+while warunek: 
+    instrukcja 
+    instrukcja
+i=04 while							
+i+=1 
+print(i)
+n = input("podaj luczbe calkowita")
+while not n.isdigit():
+n= input("sprobuj ponownie jeszcze raz",n)
+3a 
+pyta ponownie 
+2 dziala. 
+help(str)
+s=1213321312 
+print (s.isnumber)
+True 
+string= "HELLO"
+print string isupper() //>?????
+True 
+0=false 
+a=7
+while a:
+    a-=1
+    print(a,end=" ")
+else print("koniec")
+6 5 4 3 2 1 koniec
+for cel sekwencja :
+    instruncka 1 
+    instrukcja 2    
+else 
+    instrukcja 3 
+    for x in lista:
+    print (x, end=" ")
+    a b c d 
+    bez end 
+    a
+    b
+    c
+    d
+range wazna komenda przyswoic sobie 
+range (5)
+range 0, 5
+list(range(5))
+0 1 2 3 4 5
+a=range (1,7,2)
+a.start 
+1 
+a.step 
+2 
+zastosowanie for do tworzenia list 
+lista1 = [2, 4 ,6]
+[3*x for x in lista]
+(6, 12, 18)
+powtorzyc tworzenie list i wykonywanie list w python \
+break pass

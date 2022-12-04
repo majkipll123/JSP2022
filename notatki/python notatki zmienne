@@ -1,0 +1,46 @@
+slowniki 
+(dict) 
+czym jest slownik? 
+Lista=[a,b,c,d]
+kazdy element= indeks 
+lista[1]=b a=wartosc klucz=1
+person3=[
+'name':'Ford Perfect'
+'gender':'male'
+'occupation':'researcher'
+'home':'betelguese seven'
+]
+printlen(person3)
+lista_temp=[1,2,3]
+lista_temp[3]=4 =. blad 
+ale w slowniku mozna tak zrobic 
+person3["Age"]=33
+doda wartosc wieku na koncu slownika 
+print(preson3.keys()) 
+print(preson3.values())
+"male" in person3 true/False
+preson3['klucz']
+blad nie rozpoznaje 
+slownik.get 
+ponoc jest lepczy nie wiem co daje jezeli czegos nie ma to daje none a jak bez .get to daje blad 
+a z blegem nie mozna pracowac a z none juz mozemy 
+person3.get('klucz','brak klucza') jezeli bedzie klucz to da prawde a jak nie ma to napsize brak klucza 
+zamiast tego moze byc np 1 2 3 i
+for kv in person3:
+    print(kv)
+    printuje najpierw klucze a nie wartosci 
+    jezeli chcemy iterowac  po 2 na raz to wprowadzamy dodatkowy indeks w fr i musimy dodac .items
+    preson3.items()
+    enumarate
+ile samoglosek jest w zdaniu 
+vowels- list (aeiou)
+word='display any vowels foiund iin a supplied word'
+found={}
+for letter in word;
+if leter in volwes:
+    if letter not in found:
+        found[letter]=1
+        else:
+        found [letter]+=1
+slownik moze zawierac w sobie slowniki 
+PPRINT!!!!!!!
