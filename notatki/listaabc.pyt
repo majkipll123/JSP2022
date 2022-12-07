@@ -1,2 +1,2 @@
-lista = (input("wypisz liste")).split()
-#np a b [1,2,2] d (a,a)
+for i in range(2,100,2):
+    print(i)
