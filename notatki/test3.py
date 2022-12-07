@@ -1,5 +1,5 @@
-text = "CEASER CIPHER DEMO"
-s = 1
+text = input("CEASER CIPHER DEMO")
+s =int(input("podaj o ile chcesz przesunac")) 
 def encrypt(text,s):
    result=""
    for i in range(len(text)):
