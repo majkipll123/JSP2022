@@ -1,5 +1,5 @@
 import sys 
-from  trojkat import *
+from  trojkat.py import *
 
 x=int(input("podaj 1 liczbe do trojkata"))
 y=int(input("podaj 2 liczbe do trojkata"))
