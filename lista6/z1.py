@@ -1,6 +1,6 @@
 import sys 
-from  trojkat.py import *
-
+from  trojkat import *
+#if __name__ is "__main__":
 x=int(input("podaj 1 liczbe do trojkata"))
 y=int(input("podaj 2 liczbe do trojkata"))
 z=int(input("podaj 3 liczbe do trojkata"))
