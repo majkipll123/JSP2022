@@ -1,3 +1,4 @@
+
 def obroc(txt, key):
     def cipher(i, low=range(97,123), upper=range(65,91)): #sprawdza czy literka jest mala czy duza jezeli nie to pomija
         if i in low or i in upper:
@@ -17,3 +18,8 @@ def obroc2(a, key):
        i = (i - s - key) % 26 + s
      return chr(i)
    return ''.join([cipher(ord(s)) for s in a])
+   a=input("podaj zdanie do szyfru ")
+b=int(input("podaj o ile chcesz przesunac "))
+v=(obroc(a,b))
+print(v)
+print(obroc2(v,b))
