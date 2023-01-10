@@ -24,6 +24,6 @@ with open ... as file :
         amien na stringa itp wiadomka 
 
 
-
+Napisz program, który wczyta plikPESEL.txt a następnie z na podstawie nr PESEL: 1)sprawdzi czy PESEL jest poprawnie zdefiniowany (tzn. czy ostatnia cyfra jest prawidłowa) 2)jeśli PESEL jest prawidłowy, odczyta datę urodzenia oraz płeć 3)wyniki w formie "nr PESEL:\n data urodzenia %d-%m-%Y;\t płeć: %płeć" zapisze do pliku.
 
 
