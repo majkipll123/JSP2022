@@ -14,22 +14,21 @@ def odszyfruj(plik, key):
         if i in low or i in upper:
             
             s = 65 if i in upper else 97
-            i = (i - s + key) % 26 + s
+            i = (i - s - key) % 26 + s
         return chr(i)
     a_deszyfr=''.join([cipher(ord(s)) for s in text]) 
     return a_deszyfr
 def decrypt_files_in_directory(sciezka):
-    #"""
-    #Decrypts all files in a directory that match the pattern 
-    #"plik_zaszyfrowany%n_%Y%m%d.txt" and saves the decrypted 
-    #files with the pattern "plik_deszyfrowany%n_%Y%m%d.txt"
-    #"""
+
     # pobiera wszystkie pliki z sciezki
     files = os.listdir(sciezka)
     # znajdz pliki "plik_zaszyfrowany%n_%Y%m%d.txt"
     wzor = re.compile(r'plik_zaszyfrowany(\d+)_\d{4}-\d{2}-\d{2}\.txt') # import re
+    filename=""
     for file in files:
-        dopasowanie = wzor.match(file) #zwraca boola
+        
+        dopasowanie = re.search(wzor,file) #zwraca boola
+        #print(dopasowanie) dopasowanie = blad?
         if dopasowanie:
             #sciaga klucz z nazwy pliku
             key = int(dopasowanie.group(1))
@@ -38,12 +37,12 @@ def decrypt_files_in_directory(sciezka):
             #zapisz odszyfrowany plik
             date = datetime.now().strftime("%Y%m%d")
             filename = f"plik_deszyfrowany{key}_{date}.txt"
-    try:
-        with open(filename, "a") as f:
-            f.write(a_deszyfr)
-    except:
-        print(f"Wystąpił błąd podczas zapisu pliku {filename}.")
-        sys.exit(1)
+    #try:
+    with open(filename, "a") as f:
+        f.write(a_deszyfr)
+    #except:
+        #print(f"Wystąpił błąd podczas zapisu pliku.")
+        #sys.exit(1)
 
 
 def main():
