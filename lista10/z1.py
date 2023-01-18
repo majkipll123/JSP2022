@@ -1,6 +1,3 @@
-#napisz klase o nazwie kolo ktora jest konstuowana  za pomoca promienia R i zawierajaca dwie metody obliczajace obwod i pole   
-#kola o promieniu R
-
 class kolo:
     def __init__(self, R):
         self.R = R

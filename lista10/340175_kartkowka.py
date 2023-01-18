@@ -22,8 +22,10 @@ class Zespolona:
 
     def __str__(self):
         return str(self.re) + '+' + str(self.im) + 'i'
+
     def modul(self):
         return (self.re**2 + self.im**2)**0.5
+        
     def argument(self):
         return math.atan(self.im / self.re)
 
