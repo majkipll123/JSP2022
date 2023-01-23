@@ -1,36 +1,33 @@
-#storz program ktory oblicza maxymalna wysokosc w rzucie ukosnym, zasieg  oraz czas lotu
-import matplotlib.pyplot as plt
 import numpy as np
-#rzut ukośny
-Vo=float(input("Podaj prędkość początkową: "))
-alfa=float(input("Podaj kąt: "))
-g=9.81
-#oblicz czas po ktorym nastapi zderzenie z ziemia
-t=(2*Vo*np.sin(alfa))/g
-x=Vo*np.cos(alfa)*t
-y=Vo*np.sin(alfa)*t-0.5*g*t**2
-#zwracanie maksymalnej wartosci y
-print("Maksymalna wysokość: ",np.max(y))
-#zwraca zasieg w chwili koncowej x=0
-print("Zasięg: ",np.max(x))
-#zwraca czas
-print("Czas: ",np.max(t))
-#rysowanie trzeh wykresów
-plt.subplot(3,1,1)
-plt.plot(t,x)
-#plt.plot(t,y)
-plt.xlabel("t")
-plt.ylabel("v")
-plt.title("Rzut ukośny")
+import matplotlib.pyplot as plt
+
+t=1
+Vo=1
+alfa=1
+x=1
+y=1
+
+#wykres predkosci w kierunku poziomym i pionowym
+plt.plot(t,Vo*np.cos(alfa),label="Poziomo")
+plt.plot(t,Vo*np.sin(alfa),label="Pionowo")
+plt.xlabel("Czas")
+plt.ylabel("Prędkość")
+plt.title("Prędkość w kierunku poziomym i pionowym")
+plt.legend()
 plt.subplot(3,1,2)
-plt.plot(y,x)
-plt.xlabel("t")
-plt.ylabel("x")
-plt.title("Rzut ukośny")
+#wykres położenia w czasie
+plt.plot(t,x,label="Poziomo")
+plt.plot(t,y,label="Pionowo")
+plt.xlabel("Czas")
+plt.ylabel("Położenie")
+plt.title("Położenie w czasie")
+plt.legend()
 plt.subplot(3,1,3)
-plt.plot(t,y)
-plt.xlabel("t")
-plt.ylabel("y")
-plt.title("Rzut ukośny")
+#wykres trajektorii
+plt.plot(x,y)
+plt.xlabel("Poziomo")
+plt.ylabel("Pionowo")
+plt.title("Trajektoria")
 plt.show()
+
 
