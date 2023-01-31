@@ -8,3 +8,9 @@ class x:
                 self.podlisty.append(self.dane_wej[i:j])
     def ser_l(self):
         return self.podlisty
+def main():
+    l=[-1,2,3]
+    a=x(l)
+    print(a.ser_l())
+if __name__ == '__main__':
+    main()

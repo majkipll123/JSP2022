@@ -1,5 +1,10 @@
 import numpy as np
-wybor=input("Podaj czy chcesz wczytać dane z pliku (PLIK) czy z klawiatury (KLAWA): ")
+import sys
+import os
+
+dane = [int(line) for line in sys.stdin] if len(sys.argv) == 1 else [int(args) for args in sys.argv[1:]]
+
+wybor=input("Podaj czy chcesz wczytać dane z pliku (PLIK) czy z klawiatury (KLAWA) czy system (SYS): ")
 if wybor =="PLIK":
     try:
         with open("dane.txt","r") as f:
@@ -10,9 +15,12 @@ if wybor =="PLIK":
 
 elif wybor=="KLAWA":
     A=np.array(input().split(","),dtype=float)
+elif wybor=="SYS":
+    A=np.array(dane)
 else:
     print("Błędny wybór")
     exit()
+
 suma=np.sum(A) #suma wszystkich elementów
 srednia=np.mean(A) #średnia wszystkich elementów
 wariancja=np.var(A)  #oblicz wariację i odchylenie standardowe

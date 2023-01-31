@@ -5,4 +5,12 @@ class kolo:
         return 2*3.14*self.R
     def pole(self):
         return 3.14*self.R**2
-#wypisz pole i obwod na ekranie
+    def __str__(self):
+        return "Kolo o promieniu: " + str(self.R)
+def main():
+    k = kolo(5)
+    print(k)
+    print(k.obwod())
+    print(k.pole())
+if __name__ == '__main__':
+    main()
