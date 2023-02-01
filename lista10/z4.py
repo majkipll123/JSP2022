@@ -31,7 +31,7 @@ class Rates:
             raise KeyError(f"{to_currency} not found in exchange rates")
         return amount
 
-#Rates (plik) dzialal mi na windows ale po dodaniu sciezki home... nie chce wyszukac pliku
+#Rates (plik) dzialal mi na windows ale po dodaniu sciezki home... nie chce wyszukac pliku bo mowi ze jest notreadable
 rates = Rates(r"C:\Users\majki\Downloads\a020z230130.xml")
 def main():
     rates.list_rates()
