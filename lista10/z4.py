@@ -31,7 +31,7 @@ class Rates:
             raise KeyError(f"{to_currency} not found in exchange rates")
         return amount
 
-# initialize with the path to the XML file
+#Rates (plik) dzialal mi na windows ale po dodaniu sciezki home... nie chce wyszukac pliku
 rates = Rates(r"C:\Users\majki\Downloads\a020z230130.xml")
 def main():
     rates.list_rates()
@@ -47,6 +47,5 @@ def main():
         print(f"Converted amount: {converted_amount}")
     except KeyError as e:
         print(str(e))
-
 if __name__ == '__main__':
     main()

@@ -1,5 +1,3 @@
-#utworz klase ktora dopasowuje liste w 3 elementowe listy
-#w tali sposob ze jezeli masz podane 1,2,3,4,5,6 to tworzy listy 3 elementowe 1,2,3 4,5,6
 class SummingTriplets:
     def __init__(self, numbers):
         self.numbers = numbers

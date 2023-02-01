@@ -1,4 +1,3 @@
-#napisz klase inicjalizowana za pomoca listy ktora zawiera metode zawierajaca wszystkie podlisty podanej listy 
 class x:
     def __init__(self,l):
         self.dane_wej=l
